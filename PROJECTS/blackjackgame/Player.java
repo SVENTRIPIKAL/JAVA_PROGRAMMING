@@ -21,7 +21,7 @@ public class Player implements Opponent
         try
         {
             System.out.printf("PLAYER IS CUTTING THE DECK...%n%n");
-            Thread.sleep(1800);
+            Thread.sleep(1850);
         }
         catch (Exception ignore) {    }
         

@@ -23,7 +23,7 @@ public class Dealer implements Opponent
         try
         {
             System.out.printf("DEALER IS SHUFFLING THE DECK...%n%n");
-            Thread.sleep(1800);
+            Thread.sleep(1850);
         }
         catch (Exception ignore) {    }
         
@@ -61,7 +61,7 @@ public class Dealer implements Opponent
     public void reShuffle(Player player){
         try {
             System.out.printf("%nDEALER IS RESHUFFLING THE DECK...%n%n");
-            Thread.sleep(1800);
+            Thread.sleep(1850);
             BlackJackGame.deck.addAll(BlackJackGame.pile);
             BlackJackGame.pile.clear();
             Collections.shuffle(BlackJackGame.deck);
@@ -102,19 +102,29 @@ public class Dealer implements Opponent
      *
      * @param dealer deal 1 face-down card to self
      */
-    public void dealCardFaceDown(Dealer dealer)
+    public void dealCardFaceDown(Dealer dealer) throws Exception
     {
-        dealer.getFaceDownHand().add(BlackJackGame.deck.remove(0));
-        String card = dealer.getFaceDownHand().get(
-                dealer.getFaceDownHand().size()-1);
         try
         {
+            dealer.getFaceDownHand().add(BlackJackGame.deck.remove(0));
+            String card = dealer.getFaceDownHand().get(
+                    dealer.getFaceDownHand().size()-1);
             System.out.printf("%s'S DEAL:\t[FACE-DOWN]%n%n",
                     dealer.getClass().getSimpleName().toUpperCase());
-            Thread.sleep(600);
+            Thread.sleep(650);
+            dealer.setFacedDownHandValue(card);
         }
-        catch (Exception ignore) {    }
-        dealer.setFacedDownHandValue(card);
+        catch (Exception deckEmpty)
+        {
+            reShuffle(BlackJackGame.player);
+            dealer.getFaceDownHand().add(BlackJackGame.deck.remove(0));
+            String card = dealer.getFaceDownHand().get(
+                    dealer.getFaceDownHand().size()-1);
+            System.out.printf("%s'S DEAL:\t[FACE-DOWN]%n%n",
+                    dealer.getClass().getSimpleName().toUpperCase());
+            Thread.sleep(650);
+            dealer.setFacedDownHandValue(card);
+        }
     }
     
     
