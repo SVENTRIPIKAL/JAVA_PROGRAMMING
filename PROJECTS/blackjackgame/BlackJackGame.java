@@ -1,7 +1,6 @@
 package blackjackgame;
 
 import java.util.List;
-import java.util.Random;
 import java.util.ArrayList;
 import java.text.NumberFormat;
 import java.io.BufferedReader;
