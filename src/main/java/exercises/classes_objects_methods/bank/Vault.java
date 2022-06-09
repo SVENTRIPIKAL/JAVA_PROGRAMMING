@@ -1,4 +1,4 @@
-package exercises.CLASSES_OBJECTS_METHODS.BANK;
+package exercises.classes_objects_methods.bank;
 
 //#8
 public class Vault {

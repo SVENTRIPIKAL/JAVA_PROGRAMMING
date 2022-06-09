@@ -1,4 +1,4 @@
-package exercises.NUMBERS;
+package exercises.numbers;
 
 import java.math.BigDecimal;
 import java.math.MathContext;

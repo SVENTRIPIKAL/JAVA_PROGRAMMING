@@ -1,4 +1,4 @@
-package exercises.REGULAR_EXPRESSIONS;
+package exercises.regular_expressions;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;

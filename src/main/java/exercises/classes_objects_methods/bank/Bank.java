@@ -1,7 +1,7 @@
-package exercises.CLASSES_OBJECTS_METHODS.BANK;
+package exercises.classes_objects_methods.bank;
 
-import exercises.CLASSES_OBJECTS_METHODS.BANK_CUSTOMER.Account;
-import exercises.CLASSES_OBJECTS_METHODS.BANK_CUSTOMER.Customer;
+import exercises.classes_objects_methods.bank_customer.Account;
+import exercises.classes_objects_methods.bank_customer.Customer;
 
 //#8
 public class Bank {

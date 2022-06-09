@@ -1,4 +1,4 @@
-package exercises.CONTROL_FLOW;
+package exercises.control_flow;
 
 import java.util.Random;
 import java.util.Arrays;
