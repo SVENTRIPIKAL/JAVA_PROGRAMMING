@@ -1,4 +1,4 @@
-package WORKING_WITH_TEXT;
+package exercises.WORKING_WITH_TEXT;
 
 public class Main {
     public static void main(String[] args) {

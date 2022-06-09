@@ -1,4 +1,4 @@
-package CLASSES_OBJECTS_METHODS.BANK_CUSTOMER;
+package exercises.CLASSES_OBJECTS_METHODS.BANK_CUSTOMER;
 
 //#8
 public class Customer {

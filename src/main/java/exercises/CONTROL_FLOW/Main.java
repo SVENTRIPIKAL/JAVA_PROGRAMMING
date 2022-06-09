@@ -1,4 +1,4 @@
-package CONTROL_FLOW;
+package exercises.CONTROL_FLOW;
 
 import static CONTROL_FLOW.Functions.outputDaysOfWeek;
 import static CONTROL_FLOW.Functions.outputAddressInfo;
