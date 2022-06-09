@@ -1,7 +1,7 @@
 package exercises.CONTROL_FLOW;
 
-import static CONTROL_FLOW.Functions.outputDaysOfWeek;
-import static CONTROL_FLOW.Functions.outputAddressInfo;
+import static exercises.CONTROL_FLOW.Functions.outputAddressInfo;
+import static exercises.CONTROL_FLOW.Functions.outputDaysOfWeek;
 
 public class Main {
     public static void main(String[] args) {

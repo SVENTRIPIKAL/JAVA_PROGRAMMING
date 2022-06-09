@@ -1,9 +1,9 @@
 package exercises.CLASSES_OBJECTS_METHODS;
 
-import CLASSES_OBJECTS_METHODS.BANK.Bank;
-import CLASSES_OBJECTS_METHODS.BANK.BankManager;
-import CLASSES_OBJECTS_METHODS.BANK.Vault;
-import CLASSES_OBJECTS_METHODS.BANK_CUSTOMER.Customer;
+import exercises.CLASSES_OBJECTS_METHODS.BANK.Bank;
+import exercises.CLASSES_OBJECTS_METHODS.BANK.BankManager;
+import exercises.CLASSES_OBJECTS_METHODS.BANK.Vault;
+import exercises.CLASSES_OBJECTS_METHODS.BANK_CUSTOMER.Customer;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
