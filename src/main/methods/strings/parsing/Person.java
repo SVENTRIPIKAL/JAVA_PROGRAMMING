@@ -9,8 +9,8 @@ public class Person {
     private final String zip;
     
     public Person(String firstName, String lastName,
-                  String street, String city, String state,
-                  String zip) {
+                  String street,    String city,
+                  String state,     String zip) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.street = street;
@@ -22,8 +22,7 @@ public class Person {
     
     @Override
     public String toString() {
-        return String.format("""
-            %s, %s, %s, %s, %s, %s""", firstName, lastName,
-            street, city, state, zip);
+        return String.format("%s, %s, %s, %s, %s, %s",
+            firstName, lastName, street, city, state, zip);
     }
 }
