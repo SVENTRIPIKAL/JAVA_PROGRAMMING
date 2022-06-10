@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
+import static methods.strings.casing.Cased.toTitleCase;
+
 public class Functions {
     private Functions() {   }
     
@@ -139,17 +141,5 @@ public class Functions {
         System.out.printf("DEFAULT PRINT: %s%n%n",
                 Arrays.toString(daysOfTheWeek.toArray()).toUpperCase()
         );
-    }
-    
-    // RETURNS COMPLETE STRING WITH ALL FIRST LETTERS CAPITALIZED
-    private static String toTitleCase(String text) {
-        String regex = "\\p{Alpha}+([\\s\\t]|\\b)+";
-        Pattern pat = Pattern.compile(regex);
-        Matcher mat = pat.matcher(text);
-        StringBuilder casing = new StringBuilder();
-        while (mat.find()) {
-            casing.append(mat.group().substring(0,1).toUpperCase())
-                    .append(mat.group().substring(1));
-        } return casing.toString();
     }
 }
