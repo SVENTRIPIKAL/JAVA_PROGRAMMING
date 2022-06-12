@@ -6,13 +6,24 @@ import java.util.regex.Matcher;
 public class Cased {
     private Cased() {   }
     
-    // RETURNS STRING WITH EVERY OTHER LETTER UPPER-CASED
+    // RETURNS STRING WITH EVERY OTHER LETTER CAPITALIZED
     public static String returnEOLCased(String text) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
             if (i % 2 != 0) {
                 sb.append(String.valueOf(text.charAt(i)).toUpperCase());
-            } else { sb.append(text.charAt(i)); }
+            } else { sb.append(String.valueOf(text.charAt(i)).toLowerCase()); }
+        } return sb.toString();
+    }
+    
+    // RETURNS STRING WITH MID-LETTER CAPITALIZED
+    public static String returnMidCased(String text) {
+        int midPoint = text.length()/2;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < text.length(); i++) {
+            if (i == midPoint) {
+                sb.append(String.valueOf(text.charAt(i)).toUpperCase());
+            } else { sb.append(String.valueOf(text.charAt(i)).toLowerCase()); }
         } return sb.toString();
     }
     
@@ -24,7 +35,7 @@ public class Cased {
         StringBuilder casing = new StringBuilder();
         while (mat.find()) {
             casing.append(mat.group().substring(0,1).toUpperCase())
-                    .append(mat.group().substring(1));
+                    .append(mat.group().substring(1).toLowerCase());
         } return casing.toString();
     }
     
