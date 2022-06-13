@@ -16,7 +16,13 @@ public class Main {
         //#3    MEALS FOR DAYS
         getMealsForDays("friday, thursday, monday, saturday, tuesday");
         
-        //#4    ALPHABETICAL POSITION
+        //#4    NUMERIC POSITION
+        outputNumericPosition("l");
         
+        //#5    ALPHABETIC POSITION
+        outputAlphabeticValue("12");
+        
+        //#6    CHESSBOARD COORDINATES
+        chessBoardCoordinatesToArray("A8");
     }
 }
