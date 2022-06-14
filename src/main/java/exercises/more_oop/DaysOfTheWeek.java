@@ -91,17 +91,6 @@ public enum DaysOfTheWeek {
         } else System.out.printf("\"NOT A NUMBER BETWEEN 1-26!!!\"%n%n");
     }
     
-    //#6    CHESSBOARD COORDINATES
-    public static void chessBoardCoordinatesToArray(String chessCoordinates) {
-        if (chessCoordinates.toLowerCase().matches("[a-h][1-8]")) {
-            int letter = chessCoordinates.toLowerCase().charAt(0) - 97;
-            int number = 8 - Integer.parseInt(
-                    chessCoordinates.substring(1)
-            );
-            System.out.printf("[%s, %s]%n%n", letter, number);
-        } else System.out.printf("\"CHESS BOARDS ARE ONLY 8x8!!!\"%n%n");
-    }
-    
     @Override public String toString() {
         return this.food;
     }

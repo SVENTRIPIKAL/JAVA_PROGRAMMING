@@ -1,5 +1,6 @@
 package exercises.more_oop;
 
+import exercises.more_oop.chess.*;
 import static exercises.more_oop.DaysOfTheWeek.*;
 
 public class Main {
@@ -22,7 +23,11 @@ public class Main {
         //#5    ALPHABETIC POSITION
         outputAlphabeticValue("12");
         
-        //#6    CHESSBOARD COORDINATES
-        chessBoardCoordinatesToArray("A8");
+        //#6-8  CHESS
+        ChessBoard board = new ChessBoard();
+        Pawn pawn1 = new Pawn();
+        board.setChessPiece(pawn1, "d4");
+        System.out.println(board.getChessPiece("d4"));
+        System.out.println(board);
     }
 }
