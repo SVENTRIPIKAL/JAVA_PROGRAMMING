@@ -1,7 +1,7 @@
-package exercises.more_oop.chess;
+package exercises.more_oop.games.chess;
 
-public class Pawn extends ChessPiece {
-    public Pawn() { }
+class Pawn extends ChessPiece {
+    public Pawn(ChessPieceColor color) { this.color = color; }
     
     
     @Override public String toString() {

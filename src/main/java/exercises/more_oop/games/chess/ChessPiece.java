@@ -1,6 +1,7 @@
-package exercises.more_oop.chess;
+package exercises.more_oop.games.chess;
 
-public abstract class ChessPiece {
+abstract class ChessPiece {
+    protected ChessPieceColor color;
     private int x_coordinate, y_coordinate;
     
     protected int getX_ColumnLetter() {
