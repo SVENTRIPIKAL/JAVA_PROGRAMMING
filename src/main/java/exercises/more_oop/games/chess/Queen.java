@@ -6,7 +6,7 @@ class Queen extends ChessPiece {
     
     @Override public String toString() {
         return String.format("QUEEN: [%s, %s]",
-                getX_ColumnLetter(), getY_RowNumber()
+                getColumn(), getRow()
         );
     }
 }

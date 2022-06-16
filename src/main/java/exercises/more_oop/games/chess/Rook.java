@@ -6,7 +6,7 @@ class Rook extends ChessPiece {
     
     @Override public String toString() {
         return String.format("ROOK: [%s, %s]",
-                getX_ColumnLetter(), getY_RowNumber()
+                getColumn(), getRow()
         );
     }
 }
