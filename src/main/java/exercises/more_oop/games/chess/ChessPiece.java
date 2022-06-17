@@ -6,8 +6,6 @@ abstract class ChessPiece {
     protected ChessPieceColor color;
     protected int row, column;
     
-    protected ChessPieceColor getColor() { return this.color; }
-    
     protected boolean isOccupied(String to) {
         return getChessPiece(to) != null;
     }
@@ -17,6 +15,9 @@ abstract class ChessPiece {
             ChessPiece piece = getChessPiece(from);
             clearPreviousLocation(from);
             setChessPiece(piece, to);
+            if (piece instanceof Pawn) {
+                ((Pawn) piece).setInitialMovement(false);
+            }
         } else System.out.println("THAT PIECE CAN'T MOVE THERE");
     }
     
@@ -67,7 +68,7 @@ abstract class ChessPiece {
         board[previousCoordinates[0]][previousCoordinates[1]] = null;
     }
     
-    protected boolean withinRange(int[] coordinates) { return true; }
+    protected boolean withinRange(int[] destination) { return true; }
     
     protected int getColumn() { return column; }
     
