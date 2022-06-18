@@ -6,8 +6,13 @@ abstract class ChessPiece {
     protected ChessPieceColor color;
     protected int row, column;
     
-    protected boolean isOccupied(String to) {
-        return getChessPiece(to) != null;
+    protected boolean isOccupied(int[] destination) {
+        return board[destination[0]][destination[1]] != null;
+    }
+    
+    protected boolean isRival(int[] destination) {
+        ChessPiece chessPiece = board[destination[0]][destination[1]];
+        return !chessPiece.color.equals(this.color);
     }
     
     protected void move(String from, String to) {
