@@ -1,4 +1,4 @@
-package projects.blackjackgame;
+package projects.games.blackjack;
 
 import java.util.List;
 

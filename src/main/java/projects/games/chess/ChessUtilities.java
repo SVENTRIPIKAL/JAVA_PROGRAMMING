@@ -1,4 +1,4 @@
-package exercises.more_oop.games.chess;
+package projects.games.chess;
 
 class ChessUtilities {
     private ChessUtilities() {  }

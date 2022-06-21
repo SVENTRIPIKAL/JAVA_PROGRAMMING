@@ -1,4 +1,4 @@
-package exercises.more_oop.games.chess;
+package projects.games.chess;
 
 class Queen extends ChessPiece {
     public Queen(ChessPieceColor color) { this.color = color; }

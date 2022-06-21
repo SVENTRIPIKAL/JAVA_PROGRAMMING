@@ -1,4 +1,4 @@
-package exercises.more_oop.games.chess;
+package projects.games.chess;
 
 /**
  *  Simple Chess game inspired by:

@@ -1,6 +1,6 @@
-package exercises.more_oop.games.chess;
+package projects.games.chess;
 
-import static exercises.more_oop.games.chess.ChessBoard.board;
+import static projects.games.chess.ChessBoard.board;
 
 abstract class ChessPiece {
     protected ChessPieceColor color;

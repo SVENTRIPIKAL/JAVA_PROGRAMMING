@@ -1,4 +1,4 @@
-package exercises.more_oop.games.chess;
+package projects.games.chess;
 
 class Pawn extends ChessPiece {
     private boolean initialMovement = true;
