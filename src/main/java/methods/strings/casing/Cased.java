@@ -29,7 +29,7 @@ public class Cased {
     
     // RETURNS COMPLETE STRING WITH ALL FIRST LETTERS CAPITALIZED
     public static String toTitleCase(String text) {
-        String regex = "\\p{Alpha}+([\\s\\t]|\\b)+";
+        String regex = "\\p{Alpha}+([\\W\\s\\t]|\\b)+";
         Pattern pat = Pattern.compile(regex);
         Matcher mat = pat.matcher(text);
         StringBuilder casing = new StringBuilder();
